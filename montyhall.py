@@ -24,10 +24,7 @@ def simulate(change, numDoors):
 		while (firstPick == originalPick or firstPick in montyHallOpens):
 			firstPick = random.randrange(0, numDoors)
 
-	if (firstPick == carIn):
-		return True
-	else:
-		return False
+	return (firstPick == carIn)
 
 # Driver method
 def main():
